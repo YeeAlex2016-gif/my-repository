@@ -14,6 +14,22 @@
   <div class="background-glow glow-one"></div>
   <div class="background-glow glow-two"></div>
 
+  <header class="site-header"><!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="王宇峰的個人網頁與作品集" />
+  <title>王宇峰｜個人網頁作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
   <header class="site-header">
     <nav class="nav container">
       <a class="brand" href="#home" aria-label="回到首頁">
@@ -31,6 +47,118 @@
       </div>
 
       <a class="nav-cta" href="mailto:1213alex2016@gmail.com">聯絡我</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">📍 Taichung, Taiwan</p>
+        <h1>嗨，我是 <span>王宇峰</span><br>這是我的個人網頁。</h1>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">查看作品 →</a>
+          <a class="button secondary" href="resume.pdf" download>下載履歷 ↓</a>
+        </div>
+      </div>
+
+      <aside class="profile-card reveal">
+        <div class="profile-inner">
+          <div class="avatar">王</div>
+          <h2>前端開發 / 個人品牌網站</h2>
+          <div class="stats">
+            <div><strong>3+</strong><small>作品</small></div>
+            <div><strong>6</strong><small>技能</small></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="container section" id="about">
+      <div class="info-grid">
+        <article class="info-card reveal"><span>⌘</span><h3>技術能力</h3><p>熟悉 JavaScript、元件化開發、互動效果與響應式版面設計。</p></article>
+        <article class="info-card reveal"><span>▣</span><h3>工作方式</h3><p>重視清楚的需求拆解、可維護的程式碼與良好的使用者體驗。</p></article>
+        <article class="info-card reveal"><span>↗</span><h3>持續學習</h3><p>持續精進前端工具鏈、設計系統與網站效能優化。</p></article>
+      </div>
+
+      <div class="skills reveal">
+        <h2>技能</h2>
+        <div class="skill-tags">
+          <span>JavaScript</span><span>HTML / CSS</span><span>Responsive Web</span><span>UI/UX Design</span><span>Python</span><span>Web Animation</span><span>資安</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="projects">
+      <div class="section-heading reveal">
+        <p>Projects</p>
+        <h2>精選</h2>
+      </div>
+
+      <div class="filters reveal" id="filters">
+        <button class="active" data-filter="全部">全部</button>
+        <button data-filter="證照">證照</button>
+        <button data-filter="作品">作品</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card reveal" data-category="證照">
+          <div class="project-image"></div>
+          <p>證照</p><h3>APCS</h3>
+          <p>觀念3級 實作3級</p>
+          <div class="tech"><span>Python</span><span>C++</span></div>
+          <a href="#">查看詳細 →</a>
+        </article>
+        <article class="project-card reveal" data-category="作品">
+          <div class="project-image"></div>
+          <p>數據分析</p><h3>車流大數據分析</h3>
+          <p>利用大數據分析工具，處理並分析高公局高速公路車輛統計資料，以掌握各車種流量數據</p>
+          <div class="tech"><span>Python爬蟲</span><span>AWS S3</span><span>AWS Athena</span></div>
+          <a href="#">查看詳細 →</a>
+        </article>
+        <article class="project-card reveal" data-category="作品">
+          <div class="project-image"></div>
+          <p>遊戲</p><h3>遙控格鬥遊戲</h3>
+          <p>使用聯網開發版接上按鈕製作簡易遙控器遊玩自製格鬥遊戲</p>
+          <div class="tech"><span>Arduino</span><span>Python</span></div>
+          <a href="#">查看詳細 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" id="contact">
+      <div class="contact-card reveal">
+        <h2>想一起做點什麼嗎？</h2>
+        <p>歡迎透過 Email 或社群平台聯絡我。</p>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:1213alex2016@gmail.com">Email</a>
+          <a class="button secondary" href="https://github.com/YeeAlex2016-gif" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- <a class="button secondary" href="https://www.linkedin.com/in/yourname" target="_blank" rel="noreferrer">LinkedIn</a> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> 王宇峰. Built with HTML, CSS and JavaScript.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="回到首頁">
+        <span class="brand-icon">✦</span>
+        <span>王宇峰</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="切換選單" aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">首頁</a>
+        <a href="#about">關於</a>
+        <a href="#projects">作品</a>
+        <a href="#contact">聯絡</a>
+      </div>
+
+      <a class="nav-cta" href="mailto:your.email@example.com">聯絡我</a>
     </nav>
   </header>
 
@@ -83,8 +211,8 @@
 
       <div class="filters reveal" id="filters">
         <button class="active" data-filter="全部">全部</button>
-        <button data-filter="網站">網站</button>
-        <button data-filter="應用程式">應用程式</button>
+        <button data-filter="證照">證照</button>
+        <button data-filter="作品">作品</button>
       </div>
 
       <div class="project-grid" id="projectGrid">
